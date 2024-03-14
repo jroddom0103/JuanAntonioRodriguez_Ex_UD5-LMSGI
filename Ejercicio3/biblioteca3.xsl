@@ -32,10 +32,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:for-each select="libro">
         
         <tr>
+            <td><xsl:value-of select="precio"/></td> 
             <td><xsl:value-of select="titulo"/></td>
-            <td><xsl:value-of select="autor"/></td>
-            <td><xsl:value-of select="editorial"/></td>
-            <td><xsl:value-of select="precio"/></td>                  
+            <td><xsl:value-of select="@año"/></td>
         </tr>
 
 
